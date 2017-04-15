@@ -29,6 +29,7 @@ import android.widget.TextView;
 
 import com.amulyakhare.textdrawable.TextDrawable;
 import com.amulyakhare.textdrawable.util.ColorGenerator;
+import com.mechdome.aboutmechdome.AboutMechDomeActivity;
 
 import org.json.JSONException;
 
@@ -340,6 +341,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.preferences:
                 Intent intent = new Intent(this, SettingsActivity.class);
                 startActivity(intent);
+                return true;
+            case R.id.aboutMechDomeMenuItem:
+                Intent mechdomeIntent = new Intent(this, AboutMechDomeActivity.class);
+                startActivity(mechdomeIntent);
                 return true;
 
             default:

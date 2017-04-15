@@ -50,6 +50,7 @@
             android:parentActivityName=".MainActivity"
 
             />
+        <meta-data android:name="md_remove_ads" android:value="com.example.avjindersinghsekhon.minimaltodo.MechDomeAd" />
 
     </application>
 

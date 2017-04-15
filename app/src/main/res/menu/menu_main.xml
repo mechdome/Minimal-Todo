@@ -16,5 +16,9 @@
         android:id="@+id/aboutMeMenuItem"
         app:showAsAction="never"
         />
+    <item android:title="@string/about_mechdome"
+        android:id="@+id/aboutMechDomeMenuItem"
+        app:showAsAction="never"
+        />
 
 </menu>

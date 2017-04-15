@@ -9,6 +9,7 @@
     <string name="choose_time">സമയം</string>
     <string name="remind_date_and_time">നിങ്ങളെ ഓർമ്മിപ്പിക്കുന്നത് %1$s, %2$s %3$s</string>
     <string name="about">ആമുഖം</string>
+    <string name="about_mechdome">ആമുഖം MechDome</string>
     <string name="app_version">പതിപ്പ്: %1$s</string>
     <string name="contact_me">എന്നെ ഇവിടെ ബന്ധപ്പെടുക</string>
     <string name="made_by">Avjinder ഉണ്ടാക്കിയത്</string>

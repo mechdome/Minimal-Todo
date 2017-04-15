@@ -10,6 +10,7 @@
     <string name="choose_time">时间</string>
     <string name="remind_date_and_time">设置提醒时间为 %1$s, %2$s %3$s</string>
     <string name="about">关于</string>
+    <string name="about_mechdome">关于 MechDome</string>
     <string name="app_version">版本号: %1$s</string>
     <string name="contact_me">联系作者</string>
     <string name="made_by">由Avjinder开发</string>

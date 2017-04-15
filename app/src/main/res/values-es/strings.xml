@@ -10,10 +10,16 @@
     <string name="choose_time">Hora</string>
     <string name="remind_date_and_time">Recordatorio el %1$s, %2$s %3$s</string>
     <string name="about">Acerca de</string>
+    <string name="about_mechdome">Acerca de MechDome</string>
     <string name="app_version">Versión: %1$s</string>
     <string name="contact_me">Puedes contactarme en</string>
     <string name="made_by">Hecho por Avjinder</string>
     <string name="done_label">Hecho</string>
+    <string name="date_reminder_default">Today</string>
+    <string name="date_error_check_again">The date you entered is in the past.</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="night_mode_on_summary">Night mode is on</string>
+    <string name="night_mode_off_summary">Night mode is off</string>
 
     <string-array name="snooze_options">
         <item>10 Minutos</item>
