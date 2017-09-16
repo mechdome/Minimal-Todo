@@ -7,14 +7,14 @@ import android.preference.CheckBoxPreference;
 import android.preference.PreferenceFragment;
 
 public class SettingsFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener{
-    AnalyticsApplication app;
+//    AnalyticsApplication app;
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.preferences_layout);
-        app = (AnalyticsApplication) getActivity().getApplication();
+//        app = (AnalyticsApplication) getActivity().getApplication();
    }
 
     @Override
@@ -29,7 +29,7 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
             CheckBoxPreference checkBoxPreference = (CheckBoxPreference)findPreference(preferenceKeys.night_mode_pref_key);
             if(checkBoxPreference.isChecked()){
                 //Comment out this line if not using Google Analytics
-                app.send(this, "Settings", "Night Mode used");
+//                app.send(this, "Settings", "Night Mode used");
                 themeEditor.putString(MainActivity.THEME_SAVED, MainActivity.DARKTHEME);
             }
             else{

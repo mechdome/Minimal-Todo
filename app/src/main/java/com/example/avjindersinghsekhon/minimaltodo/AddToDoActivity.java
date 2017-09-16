@@ -64,18 +64,18 @@ public class AddToDoActivity extends AppCompatActivity implements  DatePickerDia
     private boolean setTimeButtonClickedOnce = false;
     private LinearLayout mContainerLayout;
     private String theme;
-    AnalyticsApplication app;
+//    AnalyticsApplication app;
 
     @Override
     protected void onResume() {
         super.onResume();
-        app.send(this);
+//        app.send(this);
     }
 
     @SuppressWarnings("deprecation")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        app = (AnalyticsApplication)getApplication();
+//        app = (AnalyticsApplication)getApplication();
 //        setContentView(R.layout.new_to_do_layout);
         //Need references to these to change them during light/dark mode
         ImageButton reminderIconImageButton;
@@ -203,13 +203,13 @@ public class AddToDoActivity extends AppCompatActivity implements  DatePickerDia
         mToDoDateSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked){
-                    app.send(this, "Action", "Reminder Set");
-                }
-                else{
-                    app.send(this, "Action", "Reminder Removed");
-
-                }
+//                if(isChecked){
+//                    app.send(this, "Action", "Reminder Set");
+//                }
+//                else{
+//                    app.send(this, "Action", "Reminder Removed");
+//
+//                }
 
                 if (!isChecked) {
                     mUserReminderDate = null;
@@ -226,11 +226,11 @@ public class AddToDoActivity extends AppCompatActivity implements  DatePickerDia
             @Override
             public void onClick(View v) {
                 if(mUserReminderDate!=null && mUserReminderDate.before(new Date())){
-                    app.send(this, "Action", "Date in the Past");
+//                    app.send(this, "Action", "Date in the Past");
                     makeResult(RESULT_CANCELED);
                 }
                 else{
-                    app.send(this, "Action", "Make Todo");
+//                    app.send(this, "Action", "Make Todo");
                     makeResult(RESULT_OK);
                 }
                 hideKeyboard(mToDoTextBodyEditText);
@@ -575,7 +575,7 @@ public class AddToDoActivity extends AppCompatActivity implements  DatePickerDia
         switch (item.getItemId()){
             case android.R.id.home:
                 if(NavUtils.getParentActivityName(this)!=null){
-                    app.send(this, "Action", "Discard Todo");
+//                    app.send(this, "Action", "Discard Todo");
                     makeResult(RESULT_CANCELED);
                     NavUtils.navigateUpFromSameTask(this);
                 }

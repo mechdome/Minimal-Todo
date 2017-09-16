@@ -12,17 +12,17 @@ import android.view.MenuItem;
 
 public class SettingsActivity extends AppCompatActivity{
 
-    AnalyticsApplication app;
+//    AnalyticsApplication app;
     @Override
     protected void onResume() {
         super.onResume();
-        app.send(this);
+//        app.send(this);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        app = (AnalyticsApplication)getApplication();
+//        app = (AnalyticsApplication)getApplication();
         String theme = getSharedPreferences(MainActivity.THEME_PREFERENCES, MODE_PRIVATE).getString(MainActivity.THEME_SAVED, MainActivity.LIGHTTHEME);
         if(theme.equals(MainActivity.LIGHTTHEME)){
             setTheme(R.style.CustomStyle_LightTheme);
